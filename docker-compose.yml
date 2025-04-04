@@ -3,8 +3,6 @@ version: '3'
 services:
   wp:
     image: wordpress:latest
-    ports:
-      - ${PORT}:80
     volumes:
       - ./config/wp_php.ini:/usr/local/etc/php/conf.d/conf.ini
       - wp_app:/var/www/html
